@@ -19,7 +19,7 @@ TFS分别代表三个物理场，即T=thermal;   F=fluid;   S=solid displacement
 1.我采用的是基金会维护的OpenFoam (去这个官网下载：openfoam.org). 运行MTO_TFS时使用op5和op6区别不大，就只是主函数里第26行用 **while (simple.loop()) op5**还是**while (simple.loop(runTime)) op6**.
 
 
-2.Petsc正确安装后，需要修改bashrc，具体命令是sudo gedit ~/.barhrc  ,并将下面代码粘贴进去(注意改成自己电脑的路径)：
+2.Petsc正确安装后，需要修改bashrc，具体命令是sudo gedit ~/.bashrc  ,并将下面代码粘贴进去(注意改成自己电脑的路径)：
 
 export PETSC_DIR=/home/gentai/petsc
 
