@@ -2,7 +2,6 @@ MTO_TFS
 =========================================
 前言
 -----------
-朋友们我要毕业啦，这是我上传的最后一个OpenFOAM拓扑优化求解器了。
 
 TFS分别代表三个物理场，即T=thermal;   F=fluid;   S=solid displacement。需要说明的是，流体目前只做到了层流，固体只上传了不考虑热膨胀的代码，如果有小伙伴对热膨胀感兴趣可以单独邮件我。
 
@@ -15,7 +14,7 @@ TFS分别代表三个物理场，即T=thermal;   F=fluid;   S=solid displacement
 (a) **OpenFOAM 5.0或6.0**  
 (b) **PETSc 3.12**  
 (c) **swak4Foam 0.4.3**  
-(d) **openMPI 1.10**
+(d) **openMPI 1.10 OR ubuntu16**
 
 1.我采用的是基金会维护的OpenFoam (去这个官网下载：openfoam.org). 运行MTO_TFS时使用op5和op6区别不大，就只是主函数里第26行用 **while (simple.loop()) op5**还是**while (simple.loop(runTime)) op6**.
 
