@@ -27,7 +27,7 @@ export PETSC_ARCH=arch-linux2-c-debug
 
 export LD_LIBRARY_PATH=$PETSC_DIR/$PETSC_ARCH/lib:$LD_LIBRARY_PATH 
 
-PETSc的作用是给MMA提供框架的，因为Aage大佬发布了基于petsc的并行MMA，所以我修改以后就移植到op里了，修改以后的代码可以从我之前的仓库里MTO中下载。
+PETSc的作用是给MMA提供框架的，因为Aage发布了基于petsc的并行MMA，所以我修改以后就移植到op里了，修改以后的代码可以从我之前的仓库里MTO中下载。
 
 使用时需要把MMA.h和MMA.c编译成动态库，并且把该库放到**FOAM_USER_LIBBIN**.编译代码大概长这样，**注意要把路径换成你自己电脑的！！**：  mpic++ -shared -fPIC *.c -I/home/gentai/PETSc/petsc-3.11.0/include  -I/home/gentai/PETSc/petsc-3.11.0/include/mpiuni -I/home/gentai/PETSc/petsc-3.11.0/arch-linux-intel/include -o libMMA_yu.so  
 
